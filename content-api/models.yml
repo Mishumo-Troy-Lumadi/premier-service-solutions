@@ -1,0 +1,51 @@
+# a client can be an individual or a business
+client:
+  - names # individual Full Names or Business Name
+  - is_business # defaults to false
+  - address:
+    - address_line1
+    - address_line2
+    - address_line3
+    - suburb
+    - town
+    - province
+    - country # defaults to South Africa
+    - postal_code
+  - contact:
+    - mobile
+    - tel
+    - email
+  - personnel # array of personnel ids
+  - status # client status
+  - ad_hoc # ad hoc notes about the client
+
+# every business client should have personnel of different roles
+personnel:
+  - names
+  - role
+  - business # id of business
+  - contact:
+    - mobile
+    - tel
+    - email
+
+#
+contract:
+  - services
+  - service_levels
+
+#  
+service:
+  - availability
+  - details
+  
+#
+service_level_agreement:
+  - description
+  - reliability
+  - responsiveness
+  - procedure for reporting problems
+  - monitoring ans reporting
+  - consequences for not meeting service obligations
+  - escape clauses and constraints
+    

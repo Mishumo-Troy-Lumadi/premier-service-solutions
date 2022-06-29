@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "pretty": true,
+        "baseUrl": "./",
+        "paths": {
+            "@*":["./*"]
+        }
+    }
+}
